@@ -6,5 +6,6 @@
 	"PublicationDate": "Publication Date",
 	"Views": "Views",
 	"Millions": "millons",
-	"Million": "millon"
+	"Million": "millon",
+	"Color": "rgb(100, 100, 100)"
 }

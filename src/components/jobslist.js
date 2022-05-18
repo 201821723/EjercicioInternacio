@@ -34,15 +34,19 @@ const JobsList = () => {
     <div>
       <table className="table">
         <thead className="thead-dark">
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col"><FormattedMessage id="Position"/></th>
-            <th scope="col"><FormattedMessage id="Company"/></th>
-            <th scope="col"><FormattedMessage id="Salary"/></th>
-            <th scope="col"><FormattedMessage id="City"/></th>
-            <th scope="col"><FormattedMessage id="PublicationDate"/></th>
-            <th scope="col"><FormattedMessage id="Views"/></th>
+          <FormattedMessage id="Color">{(msg) =>
+          <tr style={{"backgroundColor": msg }}>
+              <th scope="col">#</th>
+              <th scope="col"><FormattedMessage id="Position"/></th>
+              <th scope="col"><FormattedMessage id="Company"/></th>
+              <th scope="col"><FormattedMessage id="Salary"/></th>
+              <th scope="col"><FormattedMessage id="City"/></th>
+              <th scope="col"><FormattedMessage id="PublicationDate"/></th>
+              <th scope="col"><FormattedMessage id="Views"/></th>
+            
           </tr>
+          }
+          </FormattedMessage>
         </thead>
         <tbody>
           {console.log("Offers", offers)}

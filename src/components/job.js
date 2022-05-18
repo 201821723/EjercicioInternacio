@@ -3,8 +3,8 @@ import { FormattedDate, FormattedMessage, FormattedNumber, FormattedPlural } fro
 
 const Job = (props) => {
   return (
-    <tr>
-      <th scope="row">{props.offer.id}</th>
+    <tr >
+      <th scope="row"  >{props.offer.id}</th>
       <td>{props.offer.name}</td>
       <td>{props.offer.company}</td>
       <td>{props.offer.salary} 
